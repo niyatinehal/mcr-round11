@@ -5,6 +5,7 @@ import { ContainerPage } from "./Pages/ContainerPage";
 import { MovieListingPage } from "./Pages/MovieListingPage";
 import { MovieDetailsPage } from "./Pages/MovieDetailsPage";
 import { StarredPage } from "./Pages/StarredPage";
+import { WatchListPage } from "./Pages/WatchListPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/movies" element={<MovieListingPage />} />
           <Route path="/movies/:id" element={<MovieDetailsPage />} />
           <Route path="/starred-page" element={<StarredPage />} />
+          <Route path='/watch-list' element={<WatchListPage/>}/> 
         </Route>
       </Routes>
     </div>
